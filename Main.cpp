@@ -30,7 +30,7 @@ public:
             exit(EXIT_FAILURE);
         }
 
-        // Seed the random number generator
+        // Create the random number generator
         srand(time(nullptr));
         int random_index = rand() % marbles.size();
 
@@ -66,6 +66,8 @@ int main() {
     Marble removed_marble = bag.remove_random_marble();
     cout << "Removed marble: " << removed_marble.color << " " << removed_marble.size << endl;
 
+#Testing 
+    
     // Verify that the marble is no longer in the bag
     cout << "Total marbles in bag after removal: " << bag.get_marble_count() << endl;
 
